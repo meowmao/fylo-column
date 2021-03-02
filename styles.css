@@ -1,0 +1,252 @@
+:root{
+    --dkblue: hsl(243, 87%, 12%);
+    --desblue: hsl(238, 22%, 44%);
+    --brightblue: hsl(224, 93%, 58%);
+    --cyan:  hsl(170, 45%, 43%);
+    --ltgrayblue: hsl(240, 75%, 98%);
+    --ltgray: hsl(0, 0%, 75%);
+    --opensans:  'Open Sans', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+    --large: 4rem;
+    --medium: 2.5rem;
+    --small: 1.3rem;
+}
+
+body{
+    font-family: var(--opensans);
+    font-weight: 400;
+    text-align: center;
+    color: black;
+}
+
+*, *::before, *::after {
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+nav{
+    font-family:var(--raleway);
+    font-weight: 400;
+}
+
+h1, h3, .cta{
+    font-weight: 700;
+}
+
+label{
+    display: none;
+}
+
+input{
+    border: none;
+}
+
+ul{
+    display: flex;
+    color: black;
+}
+
+
+input{
+    height: 40px;
+    
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content:  space-between;
+    padding: var(--small) var(--small); 
+    margin-bottom: var(--large);
+}
+
+.logo{
+    width: 100px;
+}
+
+.container{
+    padding: 0 var(--small);
+}
+
+.container-img{
+    width: 75%;
+    margin-bottom: var(--medium);
+}
+
+#navigation .nav-links:not(:last-child){
+    margin-right: var(--small);
+}
+
+.hero{
+    margin-bottom: var(--large);
+}
+
+.hero .hero-texts > *{
+    margin-bottom: var(--medium)
+}
+
+form{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+form > * + :not(:last-child){
+    margin-bottom: var(--small);
+}
+
+.cta, #email, #email2{
+    width: 300px;
+    border-radius: 5px;
+}
+
+.email-class{
+    border: 2px solid var(--desblue);
+    padding-left: 5px;
+}
+
+.cta{
+    background-color: var(--brightblue);
+    color: white;
+}
+
+.article{
+    margin-bottom: var(--large);
+}
+
+.article-texts{
+    margin-bottom: var(--medium);
+}
+
+.article-texts p{
+    color: var(--desblue);
+    text-align: left;
+}
+
+.article-texts > * {
+    margin-bottom: var(--medium);
+}
+
+.article a{
+    color: var(--cyan);
+    border-bottom: 1px solid var(--cyan);
+}
+
+.article a span{
+    vertical-align: middle;
+}
+
+.quotation{
+    width: 300px;
+    margin: 0 auto;
+    padding: var(--small);
+    /* background-color: var(--ltgray); */
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--ltgray);
+    text-align: left;  
+    font-size: 14px;
+
+}
+
+.quotation .quote-p{
+    line-height: 1.5;  
+    margin-bottom: var(--small);
+}
+
+.quotation .profile{
+    display: flex;
+    align-items: center;
+}
+
+.quotation .profile img{
+    height: 20px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.quotation .profile .name-title{
+    margin-left: 10px;
+}
+
+.quotation .profile .name-title .name{
+    font-weight: 700;
+}
+
+.get-access{
+    padding-top: var(--medium);
+    padding-bottom: var(--medium);
+    background-color: var(--desblue);
+    color: white;
+}
+
+.get-access > *{
+    margin-bottom: var(--small);
+}
+
+footer{
+    background-color: var(--dkblue);
+    display: flex;
+    flex-flow: column wrap;
+}
+
+footer > *{
+    margin-bottom: var(--medium);
+    text-align: left;
+    color: white;
+}
+
+footer .logo-footer{
+    width: 170px;
+    padding-top: var(--large);
+}
+
+footer .phone-email span{
+    margin-right: 10px;
+}
+
+footer .phone-email > :not(:last-child){
+    margin-bottom: var(--small);
+}
+
+footer .links{
+    flex-flow: column;
+    line-height: 2;
+}
+
+footer .links a{
+    color: white;
+}
+
+footer .social{
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .social img{
+    width: 30px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+footer .social li:not(:last-child){
+    margin-right: 10px;
+}
+
+.attribution{
+    padding: 10px;
+    color: black;
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+
