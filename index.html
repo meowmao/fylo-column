@@ -31,21 +31,23 @@
   <main>
     <section class="hero container">
       <img class="container-img" src="images/illustration-1.svg" alt="illustration 1">
-      <div class="hero-texts">
-        <h1>All your files in one secure location, accessible anywhere.</h1>
-        <p>Fylo stores your most important files in one secure location. 
-          Access them wherever you need, share and collaborate with friends, 
-          family, and co-workers.</p>
+      <div class="left">
+        <div class="hero-texts">
+          <h1>All your files in one secure location, accessible anywhere.</h1>
+          <p>Fylo stores your most important files in one secure location. 
+            Access them wherever you need, share and collaborate with friends, 
+            family, and co-workers.</p>
+        </div>
+        <form class="hero-form" action="#">
+            <label for="email">Email:</label>
+            <input type="text" id="email" class="email-class" name="email" aria-label="Enter your email" placeholder="Enter your email">
+            <input type="submit" class="cta" value="Get Started For Free">
+        </form>
       </div>
-      <form action="#">
-          <label for="email">Email:</label>
-          <input type="text" id="email" class="email-class" name="email" aria-label="Enter your email" placeholder="Enter your email">
-          <input type="submit" class="cta" value="Get Started For Free">
-      </form>
     </section>
 
     <section class="article container">
-      <img src="container-img" alt="">
+      <img class="container-img" src="images/illustration-2.svg" alt="illustration 2">
       <div class="article-texts">
         <h3>Stay productive, wherever you are</h3>
         <p>Never let location be an issue when accessing your files. Fylo has you 
@@ -62,7 +64,7 @@
           making the switch our team has become a well-oiled collaboration machine.
         </p>
         <div class="profile">
-          <img src="images/avatar-testimonial.jpg" alt="">
+          <img src="images/avatar-testimonial.jpg" alt="testimonial">
           <div class="name-title">
             <p class="name">Kyle Burton</p>
             <p class="titile">Founder & CEO, Huddle</p>
@@ -85,7 +87,9 @@
   </main>
 
   <footer class="container">
-    <img src="images/logo-footer.svg" alt="Fylo" class="logo-footer">
+    <div class="footer-img">
+      <img src="images/logo-footer.svg" alt="Fylo" class="logo-footer">  
+    </div>
     <div class="phone-email">
       <p>
         <span><img src="images/icon-phone.svg" alt="phone icon"></span>

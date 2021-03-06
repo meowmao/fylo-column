@@ -2,7 +2,9 @@
     --dkblue: hsl(243, 87%, 12%);
     --desblue: hsl(238, 22%, 44%);
     --brightblue: hsl(224, 93%, 58%);
+    --hoverblue: hsl(224, 93%, 65%);
     --cyan:  hsl(170, 45%, 43%);
+    --hovcyan: hsl(170, 45%, 55%);
     --ltgrayblue: hsl(240, 75%, 98%);
     --ltgray: hsl(0, 0%, 75%);
     --opensans:  'Open Sans', sans-serif;
@@ -46,7 +48,6 @@ input{
 
 ul{
     display: flex;
-    color: black;
 }
 
 
@@ -79,6 +80,37 @@ nav{
 #navigation .nav-links:not(:last-child){
     margin-right: var(--small);
 }
+
+#navigation a{
+    color: black;
+}
+
+@media only screen and (min-width:992px){
+
+    nav{
+        padding: var(--large) var(--large); 
+        align-items: center;
+    }
+
+    .logo{
+        width: 200px;
+    }
+
+    #navigation .nav-links:not(:last-child){
+        margin-right: var(--medium);
+    }
+
+    #navigation .nav-links a:hover{
+        font-weight: 700;
+    }
+    .container{
+        padding: 0 var(--large);
+    }
+
+
+
+}
+
 
 .hero{
     margin-bottom: var(--large);
@@ -113,12 +145,44 @@ form > * + :not(:last-child){
     color: white;
 }
 
+@media only screen and (min-width:992px){
+    .hero{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "left hero-img";
+        place-items: center;
+        text-align: left;
+    }
+    .hero .container-img{
+        grid-area: hero-img;
+    }
+    
+    .hero .left{
+        grid-area: left;
+    }
+    .hero-form{
+        flex-direction: row;
+    }
+
+    .hero-form #email{
+        margin-bottom: 0;
+        margin-right: var(--small);
+    }
+
+    .cta:hover{
+        background-color: var(--hoverblue);
+    }
+
+}
+
 .article{
     margin-bottom: var(--large);
 }
 
 .article-texts{
     margin-bottom: var(--medium);
+    
 }
 
 .article-texts p{
@@ -148,6 +212,7 @@ form > * + :not(:last-child){
     box-shadow: 1px 1px 5px var(--ltgray);
     text-align: left;  
     font-size: 14px;
+    
 
 }
 
@@ -175,6 +240,34 @@ form > * + :not(:last-child){
     font-weight: 700;
 }
 
+@media only screen and (min-width:992px){
+    .article{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto;  
+        grid-template-areas: 
+        "article-texts article-img"
+        "quotation article-img";
+    }
+
+    .article .container-img{
+        grid-area: article-img;
+    }
+    .article .quotation{
+        grid-area: quotation;
+        position: relative;
+        left: -20%;
+    }
+    .article .article-texts{
+    grid-area: article-texts;
+    }
+
+    .article a:hover{
+        color: var(--hovcyan);
+    }
+}
+
 .get-access{
     padding-top: var(--medium);
     padding-bottom: var(--medium);
@@ -185,6 +278,34 @@ form > * + :not(:last-child){
 .get-access > *{
     margin-bottom: var(--small);
 }
+
+@media only screen and (min-width:992px){
+    .get-access{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "h3 form"
+        "p form";
+        text-align: left;
+    }
+
+    .get-access > *{
+        margin:0;
+    }
+    .get-access p{
+        grid-area: p;
+    }
+
+    .get-access h3{
+        grid-area: h3;
+    }
+
+    .get-access form{
+        grid-area: form;
+    }
+}
+
 
 footer{
     background-color: var(--dkblue);
@@ -234,6 +355,24 @@ footer .social img{
 
 footer .social li:not(:last-child){
     margin-right: 10px;
+}
+
+@media only screen and (min-width:992px){
+    footer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+    }
+
+    footer .footer-img{
+        width: 100%;
+    }
+
+    .links a:hover{
+        color: var(--desblue);
+    }
+
 }
 
 .attribution{
