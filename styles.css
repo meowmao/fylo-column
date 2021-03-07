@@ -131,7 +131,7 @@ form > * + :not(:last-child){
 }
 
 .cta, #email, #email2{
-    width: 300px;
+    width: 15.625rem;
     border-radius: 5px;
 }
 
@@ -163,6 +163,7 @@ form > * + :not(:last-child){
     }
     .hero-form{
         flex-direction: row;
+        flex-flow: nowrap;
     }
 
     .hero-form #email{
@@ -261,6 +262,7 @@ form > * + :not(:last-child){
     }
     .article .article-texts{
     grid-area: article-texts;
+    text-align: left;
     }
 
     .article a:hover{
